@@ -17,3 +17,11 @@ class ProductManager:
         for product in self.products:
             total += product.price * product.quantity
         return total
+    
+    def elimina_produs_dupa_nume(self, name):
+        for product in self.products:
+            if product.name == name:
+                self.products.remove(product)
+                print(f"Produsul '{name}' a fost eliminat.")
+            return
+        print(f"Produsul '{name}' nu a fost găsit.")

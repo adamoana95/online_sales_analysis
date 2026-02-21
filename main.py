@@ -13,5 +13,8 @@ manager.adauga_produse(produs2)
 manager.adauga_produse(produs3)
 
 manager.afisare_produse()
-valoarea_totala = manager.afiseaza_val_totala()#
+valoarea_totala = manager.afiseaza_val_totala()
 print(f"Valoarea totala a inventarului este {valoarea_totala} lei")
+
+manager.elimina_produs_dupa_nume("Laptop")
+manager.afisare_produse()
